@@ -21,10 +21,10 @@ function canCastSpell(isSpellPrepared, hasScroll) {
  * @returns {boolean} whether the creature is hidden from the observer
  */
 function isHidden(hiding, aware) {
-  if (aware === true) {
-    return false;
-  } else if (hiding === true || aware === false) {
+  if (hiding === true || aware === false) {
     return true;
+  } else {
+    return false;
   }
 }
 
